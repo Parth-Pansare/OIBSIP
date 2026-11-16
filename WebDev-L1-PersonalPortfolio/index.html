@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Parth Pansare, IT engineering student and aspiring full-stack developer.">
+  <title>Parth Pansare — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="logo" href="#home">PP<span>.</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+      <div class="nav-menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="nav-contact">Contact <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell" id="home">
+      <div class="hero-main">
+        <div class="availability"><span></span> Open to opportunities</div>
+        <p class="intro">HELLO, I'M PARTH PANSARE</p>
+        <h1>Building digital<br>things with <span>purpose.</span></h1>
+        <p class="hero-description">I'm an Information Technology engineering student focused on Java backend development and full-stack engineering. I enjoy turning complex problems into practical, reliable applications.</p>
+        <div class="hero-buttons"><a class="primary-button" href="#projects">Explore my work <span>↗</span></a><a class="secondary-button" href="#contact">Get in touch</a></div>
+      </div>
+      <div class="profile-panel">
+        <div class="profile-orbit orbit-a"></div><div class="profile-orbit orbit-b"></div>
+        <div class="profile-initials">PP</div>
+        <div class="profile-tag tag-top">JAVA · SPRING BOOT</div>
+        <div class="profile-tag tag-bottom">BUILD / LEARN / IMPROVE</div>
+        <div class="profile-index">01 — DEVELOPER PROFILE</div>
+      </div>
+      <div class="hero-bottom"><span>BASED IN INDIA</span><span>SCROLL TO EXPLORE ↓</span><span>2026</span></div>
+    </section>
+
+    <section class="about section shell" id="about">
+      <div class="section-label"><span>01</span> ABOUT ME</div>
+      <div class="about-grid"><h2>Curiosity drives<br>the <span>build.</span></h2><div><p>I'm pursuing a Bachelor's degree in Information Technology and developing my skills across backend systems, databases and modern web technologies. I value clean architecture, useful products and learning by building.</p><p>My current focus is creating dependable applications with Java, Spring Boot and PostgreSQL, while strengthening my full-stack development skills.</p><a class="inline-link" href="https://github.com/Parth-Pansare" target="_blank" rel="noreferrer">Visit my GitHub <span>↗</span></a></div></div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="shell">
+        <div class="section-label"><span>02</span> TOOLKIT</div>
+        <div class="skills-heading"><h2>Tools I work <span>with.</span></h2><p>A growing toolkit for designing, building and shipping software.</p></div>
+        <div class="skills-grid">
+          <div class="skill"><span class="skill-symbol">J</span><div><h3>Java</h3><p>Core Java · OOP · Collections</p></div><span class="skill-arrow">↗</span></div>
+          <div class="skill"><span class="skill-symbol">S</span><div><h3>Spring Boot</h3><p>REST APIs · Spring Security · JPA</p></div><span class="skill-arrow">↗</span></div>
+          <div class="skill"><span class="skill-symbol">P</span><div><h3>PostgreSQL</h3><p>Relational databases · SQL</p></div><span class="skill-arrow">↗</span></div>
+          <div class="skill"><span class="skill-symbol">R</span><div><h3>React</h3><p>Components · Frontend integration</p></div><span class="skill-arrow">↗</span></div>
+          <div class="skill"><span class="skill-symbol">A</span><div><h3>AWS</h3><p>Cloud fundamentals</p></div><span class="skill-arrow">↗</span></div>
+          <div class="skill"><span class="skill-symbol">D</span><div><h3>Developer tools</h3><p>Git · GitHub · Docker</p></div><span class="skill-arrow">↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section shell" id="projects">
+      <div class="section-label"><span>03</span> SELECTED PROJECTS</div>
+      <div class="projects-heading"><h2>Things I've<br><span>been building.</span></h2><p>Projects that help me explore real-world engineering challenges.</p></div>
+      <article class="project-card">
+        <div class="project-art autopulse"><div class="dashboard-top"><span>AutoPulse AI</span><span>VEHICLE HEALTH / 01</span></div><div class="health-ring"><strong>86</strong><small>HEALTH SCORE</small></div><div class="chart-line"></div><div class="dashboard-foot"><span>LIVE TELEMETRY</span><span>AI DIAGNOSTICS</span></div></div>
+        <div class="project-info"><div><p class="project-type">01 / AUTOMOTIVE TECHNOLOGY</p><h3>AutoPulse AI</h3><p>A vehicle health monitoring and diagnostic platform that combines OBD-II telemetry, health scoring and AI-assisted diagnostic insights.</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>React</span></div></div><a class="project-link" href="#contact" aria-label="Ask about AutoPulse AI">↗</a></div>
+      </article>
+      <article class="project-card">
+        <div class="project-art antaris"><div class="antarctic-label">ANTARIS<span>FIELD INTELLIGENCE SYSTEM</span></div><div class="antarctic-sun"></div><div class="antarctic-mountain"></div><div class="antarctic-data">−62.4° C<br><small>STATION ENVIRONMENT</small></div></div>
+        <div class="project-info"><div><p class="project-type">02 / SMART INDIA HACKATHON</p><h3>ANTARIS</h3><p>An Antarctic intelligence and remote operations platform, bringing together a full-stack dashboard, database, backend services and machine-learning interface.</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>Frontend</span><span>ML Integration</span></div></div><a class="project-link" href="https://github.com/Parth-Pansare/ANTARIS" target="_blank" rel="noreferrer" aria-label="View ANTARIS on GitHub">↗</a></div>
+      </article>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="shell contact-inner"><div class="section-label"><span>04</span> CONTACT</div><p class="contact-kicker">HAVE A PROJECT OR OPPORTUNITY?</p><h2>Let's build<br>something <span>useful.</span></h2><a class="contact-button" href="mailto:your.email@example.com">your.email@example.com <span>↗</span></a><div class="social-links"><a href="https://github.com/Parth-Pansare" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div>
+    </section>
+  </main>
+  <footer class="footer shell"><a class="logo" href="#home">PP<span>.</span></a><span>Designed & built with curiosity.</span><span>© 2026 Parth Pansare</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>

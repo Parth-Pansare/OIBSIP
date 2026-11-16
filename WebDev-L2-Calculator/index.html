@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calc — Everyday Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar"><a class="brand" href="#">calc<span>.</span></a><span class="top-label">A SIMPLE TOOL FOR CLEAR THINKING</span></header>
+    <section class="calculator" aria-label="Calculator">
+      <div class="calculator-heading"><div><p>EVERYDAY CALCULATOR</p><h1>Let's work it out.</h1></div><span class="calculator-mark">÷</span></div>
+      <div class="display" aria-live="polite">
+        <div class="expression" id="expression">Ready when you are</div>
+        <div class="result" id="display">0</div>
+      </div>
+      <div class="keypad">
+        <button class="key utility" data-action="clear">C</button>
+        <button class="key utility" data-action="backspace" aria-label="Backspace">⌫</button>
+        <button class="key operator" data-value="÷">÷</button>
+        <button class="key operator" data-value="×">×</button>
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+        <button class="key operator" data-value="−">−</button>
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+        <button class="key operator" data-value="+">+</button>
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+        <button class="key equals" data-action="equals">=</button>
+        <button class="key zero" data-value="0">0</button>
+        <button class="key" data-value=".">.</button>
+      </div>
+      <p class="hint">Use your keyboard too · Enter to calculate · Esc to clear</p>
+    </section>
+    <footer class="footer"><span>CALC / 01</span><span>Built for the basics.</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

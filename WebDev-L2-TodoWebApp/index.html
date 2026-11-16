@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daymark — A calmer to-do list</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header"><a class="brand" href="#">daymark<span>.</span></a><span class="date-label" id="today-label"></span></header>
+    <section class="welcome"><p class="eyebrow">A FRESH PAGE, EVERY DAY</p><h1>Make room for<br><em>what matters.</em></h1><p>One step at a time. Keep your day moving.</p></section>
+    <section class="task-entry">
+      <form id="task-form"><label for="task-input">What needs doing?</label><div class="entry-row"><input id="task-input" type="text" maxlength="140" placeholder="Add a task to your list..." autocomplete="off"><button type="submit">Add task <span>+</span></button></div><p class="form-error" id="form-error" aria-live="polite"></p></form>
+    </section>
+    <section class="lists">
+      <div class="list-section"><div class="list-heading"><h2>Up next</h2><span class="count" id="pending-count">0 pending</span></div><div class="task-list" id="pending-list"></div></div>
+      <div class="list-section completed-section"><div class="list-heading"><h2>Done and dusted</h2><span class="count" id="completed-count">0 completed</span></div><div class="task-list" id="completed-list"></div></div>
+    </section>
+    <footer class="footer"><span>DAYMARK / YOUR PERSONAL TASK SPACE</span><button id="clear-completed" type="button">Clear completed tasks</button></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

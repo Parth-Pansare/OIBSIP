@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple temperature converter for Celsius, Fahrenheit and Kelvin.">
+  <title>Degree — Temperature Converter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Degree home"><span class="brand-icon">°</span>degree<span class="brand-period">.</span></a>
+      <span class="top-note">A LITTLE TOOL FOR BIG CHANGES</span>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow"><span></span> TEMPERATURE CONVERTER</p>
+      <h1>Change the<br><em>temperature.</em></h1>
+      <p class="intro-copy">A quick, clear way to move between Celsius, Fahrenheit and Kelvin. Enter a value, choose a unit and let the numbers do the work.</p>
+    </section>
+
+    <section class="converter-card" aria-labelledby="converter-title">
+      <div class="card-heading"><div><p class="card-kicker">THE CONVERTER</p><h2 id="converter-title">Make it make sense.</h2></div><div class="thermometer">♨</div></div>
+      <form id="converter-form" novalidate>
+        <div class="input-row">
+          <label for="temperature">Temperature value</label>
+          <div class="field-wrap"><input id="temperature" name="temperature" type="number" step="any" inputmode="decimal" placeholder="e.g. 24" autocomplete="off"><select id="unit" name="unit" aria-label="Input temperature unit"><option value="C">°C</option><option value="F">°F</option><option value="K">K</option></select></div>
+        </div>
+        <button class="convert-button" type="submit">Convert temperature <span>→</span></button>
+        <p class="error-message" id="error-message" role="alert" aria-live="polite"></p>
+      </form>
+      <div class="results" aria-live="polite">
+        <div class="results-heading"><span>CONVERTED VALUES</span><span class="result-status" id="result-status">WAITING FOR INPUT</span></div>
+        <div class="result-grid">
+          <article class="result-box"><span class="unit-name">CELSIUS</span><strong id="celsius-result">—</strong><small>°C</small></article>
+          <article class="result-box featured"><span class="unit-name">FAHRENHEIT</span><strong id="fahrenheit-result">—</strong><small>°F</small></article>
+          <article class="result-box"><span class="unit-name">KELVIN</span><strong id="kelvin-result">—</strong><small>K</small></article>
+        </div>
+      </div>
+      <div class="card-footer"><span>FORMULAS BUILT IN</span><span>−273.15°C = ABSOLUTE ZERO</span></div>
+    </section>
+
+    <footer class="footer"><span>DEGREE / TEMPERATURE TOOL</span><span>Made for everyday conversions · 2026</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
